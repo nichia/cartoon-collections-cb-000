@@ -1,12 +1,14 @@
 require 'pry'
 
-def roll_call_dwarves(dwarves_names)
+def roll_call_dwarves(dwarves_names) # code an argument here
   # Your code here
   dwarves_names.each_with_index { |name, index| puts "#{index + 1}. #{name}" }
 end
 
-def summon_captain_planet# code an argument here
+def summon_captain_planet(planeteer_calls) # code an argument here
   # Your code here
+  capitalized_calls = []
+  planeteer_calls.collect { |name| capitalized_calls << puts "#{name.capitalize}!" }
 end
 
 def long_planeteer_calls# code an argument here

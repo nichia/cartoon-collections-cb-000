@@ -27,10 +27,10 @@ def find_the_cheese(array_strings) # code an argument here
       false
     end
     i = i + 1
-    binding.pry
+    #binding.pry
   end
 
 
 end
 
-binding.pry
+#binding.pry

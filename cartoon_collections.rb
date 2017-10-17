@@ -12,25 +12,13 @@ end
 
 def long_planeteer_calls(planeteer_calls) # code an argument here
   # Your code here
-  planeteer_calls.any? { |name| name.length > 4}
+  planeteer_calls.any? { |call| call.length > 4}
 end
 
 def find_the_cheese(array_strings) # code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0
-  while i < cheese_types.length
-    include_flag = array_strings.include?(cheese_types[i])
-    if include_flag == true
-      return cheese_types[i]
-    else
-      false
-    end
-    i = i + 1
-    #binding.pry
-  end
-
-
+  array_strings.detect { |maybe_cheese| cheese_types.include?(maybe_cheese)}
 end
 
 #binding.pry

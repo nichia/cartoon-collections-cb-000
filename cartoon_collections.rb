@@ -1,3 +1,4 @@
+require 'pry'
 
 def roll_call_dwarves(dwarves_names)
   # Your code here

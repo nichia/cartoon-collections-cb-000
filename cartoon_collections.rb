@@ -23,10 +23,13 @@ def find_the_cheese(array_strings) # code an argument here
     array_strings.include?(cheese_types[i])
     if true
       return cheese_types[i]
+    else
+      false
     end
     i = i + 1
   end
-  false
+
+
 end
 
 binding.pry
